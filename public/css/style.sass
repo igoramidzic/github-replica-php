@@ -1,0 +1,644 @@
+*
+  border-sizing: border-box
+
+body
+  padding: 0
+
+// Change navbar collapse width
+@media (max-width: 960px)
+  .navbar-header
+    float: none
+  .navbar-left, .navbar-right
+    float: none !important
+  .navbar-toggle
+    display: block
+  .navbar-collapse
+    border-top: 1px solid transparent
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1)
+  .navbar-fixed-top
+    top: 0
+    border-width: 0 0 1px
+  .navbar-collapse.collapse
+    display: none !important
+  .navbar-nav
+    float: none !important
+    margin-top: 7.5px
+    > li
+      float: none
+      > a
+        padding-top: 10px
+        padding-bottom: 10px
+  .collapse.in
+    display: block !important
+
+// Nav
+.navbar
+  background-color: #fff
+  border: none
+  border-radius: 0px
+  border-bottom: 1px solid rgba(0,0,0,0.075)
+  height: 77px
+  margin-bottom: 0px
+  .content
+    padding-left: 20px
+    padding-right: 20px
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    max-width: 1020px
+    max-height: 36px
+    .logo-link svg
+      fill: #333
+      &:hover
+        fill: #4078c0
+    .site-header-nav-main
+      padding-left: 22px
+      li a
+        color: #3c4146
+        font-size: 1.1em
+        padding: 9px 10px 9px 10px
+    .site-header-nav-secondary
+      li
+        a
+          color: #3c4146
+          font-size: .9em
+          padding: 9px 10px 9px 10px
+        input
+          height: 34px
+          border-color: #ddd
+          width: 160px
+          font-size: .9em
+          margin-right: 11px
+          margin-left: 5px
+          padding-left: 8px
+    .signin-btn
+      background-image: linear-gradient(#eee, #ddd)
+      border-color: #ccc
+
+
+@media (max-width: 961px)
+  .navbar
+    height: 52px
+
+// Sign up section
+.signup-section
+  padding-top: 180px
+  padding-bottom: 180px
+  margin-bottom: 0px
+  background: url(../img/home-hero.jpg) no-repeat
+  background-position: bottom left
+  background-size: cover
+  position: relative
+  font-family: 'Roboto', sans-serif
+  .background-image-dimmer
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(0, 0, 0, 0.3)
+  .content
+    max-width: 1030px
+    .padding-for-mobile
+      padding: 0px
+    .attention-grabber
+      padding-left: 24px
+      padding-right: 24px
+      color: #fff
+      .header
+        line-height: 1.25
+        margin-top: 0px
+        margin-bottom: 15px
+        font-family: 'Roboto', sans-serif
+        font-size: 3.85em
+        text-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 1px 25px rgba(0,0,0,0.75)
+      .description
+        line-height: 1.5
+        font-size: 1.85em
+        text-shadow: 0 1px 1px rgba(0,0,0,0.25), 0 1px 25px rgba(0,0,0,0.75)
+    .signup-form
+      padding-left: 24px
+      padding-right: 24px
+      position: relative
+      .signup-btn-num2
+        height: 46px
+        width: 173px
+        font-size: 1.2em
+      .signup-hero
+        height: 324px
+        max-width: 340px
+        .form
+          padding-top: 18px
+          input
+            color: #333
+            border: 1px solid #443334
+            border-radius: 5px
+            font-size: 1.1em
+            min-height: 43px
+            padding: 10px
+          .small-text
+            margin-top: 5px
+            font-size: 0.87em
+            color: rgba(255,255,255,0.6)
+          .TOS
+            text-align: center !important
+            a
+              color: #fff
+          .signup-btn
+            width: 100%
+            height: 52px
+            font-size: 1.45em
+            font-weight: bold
+
+@media (max-width: 1600px)
+  .signup-section
+    padding-top: 120px
+    padding-bottom: 120px
+
+@media (max-width: 1279px)
+  .signup-section
+    padding-top: 90px
+    padding-bottom: 90px
+
+@media (max-width: 1011px)
+  .signup-section
+    padding-top: 60px
+    padding-bottom: 60px
+    .content
+      padding-left: 30px
+      padding-right: 30px
+      .attention-grabber
+        .header
+          line-height: 1.25
+          font-size: 3.45em
+        .description
+          line-height: 1.55
+          font-size: 1.7em
+
+@media (max-width: 767px)
+  .signup-section
+    background-position: 26%
+    padding-bottom: 40px
+    .content
+      .attention-grabber
+        text-align: center
+        .header
+          font-size: 2.6em
+        .description
+          font-size: 1.5em
+      .signup-form
+        text-align: center !important
+        margin: 0 auto !important
+        .signup-hero
+          text-align: center !important
+          margin: 0 auto !important
+          .form
+            padding-top: 0px
+
+@media (max-width: 544px)
+  .signup-section
+    padding-top: 50px
+    padding-bottom: 40px
+    .content
+      padding-left: 10px
+      padding-right: 10px
+      .attention-grabber
+        .header
+          font-size: 2.6em
+        .description
+          font-size: 1.5em
+      .signup-form
+        .signup-hero
+          .form
+
+// Welcome section
+.welcome-home-developers
+  padding-top: 40px
+  padding-bottom: 55px
+  background-color: #f5f5f5
+  .content
+    max-width: 1020px
+    text-align: center
+    font-family: 'Roboto', sans-serif
+    .header
+      font-size: 2.7em
+      margin-bottom: 20px
+    .description
+      line-height: 1.5
+      padding-left: 70px
+      padding-right: 70px
+      font-size: 1.9em
+      color: #767676
+
+@media (max-width: 1011px)
+  .welcome-home-developers
+    .content
+      padding-left: 50px
+      padding-right: 50px
+      .header
+        font-size: 2.4em
+      .description
+        font-size: 1.7em
+
+@media (max-width: 767px)
+  .welcome-home-developers
+    .content
+      padding-left: 0px
+      padding-right: 0px
+      .header
+        font-size: 2.0em
+      .description
+        padding-left: 30px
+        padding-right: 30px
+        font-size: 1.5em
+
+// Service section
+.services
+  background-color: #f5f5f5
+  border-top: 1px solid #e5e5e5
+  border-bottom: 1px solid #e5e5e5
+  .content
+    max-width: 1332px
+    text-align: center
+    font-family: 'Roboto', sans-serif
+    .row
+      .service:nth-child(2)
+        border-left: 1px solid #e5e5e5
+      .service:nth-child(3)
+        border-left: 1px solid #e5e5e5
+      .service:nth-child(4)
+        border-left: 1px solid #e5e5e5
+    .service
+      padding: 24px
+      .img-div
+        padding-left: 40px
+        padding-right: 40px
+        margin: 25px 0px 25px 0px
+      .title
+        line-height: 24px
+        margin: 0px
+        font-size: 1.1em
+        font-weight: bold
+        color: #333
+      .description
+        font-weight: bold
+        color: #767676
+
+@media (max-width: 991px)
+  .services
+    .content
+      .row
+        .service:nth-child(2)
+          border-top: 1px solid #e5e5e5
+        .service:nth-child(3)
+          border-top: 1px solid #e5e5e5
+        .service:nth-child(4)
+          border-top: 1px solid #e5e5e5
+      .service
+        .img-div
+          padding-left: 30%
+          padding-right: 30%
+          margin: 25px 0px 25px 0px
+        .title
+          line-height: 24px
+          font-size: 1.1em
+        .description
+
+// Who uses GitHub?
+.who-uses-github
+  padding-top: 80px
+  .content
+    max-width: 1020px
+    padding: 0px 20px 0px 20px
+    .hr-divider
+      height: 1px
+      border: 0px
+      clear: both
+      background-image: linear-gradient(to right, #b8e1ff 33.3333%, #fcd2c5 33.3333%, #fcd2c5 66.6666%, #e0c5eb 66.6666%)
+    .hr-divider-1
+      margin-top: 32px
+      margin-bottom: 0px
+    .hr-divider-2
+      margin-top: 0px
+      margin-bottom: 32px
+    .title
+      margin: 0px
+      font-family: 'Roboto', sans-serif
+      line-height: 1.5
+      font-size: 2.7em
+    .row
+      .info-col:nth-child(1)
+        .header
+          color: #0079d1
+        .header-link
+          color: #0079d1
+      .info-col:nth-child(2)
+        .header
+          color: #e8400d
+        .header-link
+          color: #e8400d
+      .info-col:nth-child(3)
+        .header
+          color: #7a3497
+        .header-link
+          color: #7a3497
+    .info-col
+      padding: 0px 24px 0px 24px
+      margin: 24px 0px 24px 0px
+      .header
+        font-size: 1.6em
+        display: inline-block
+        &:hover
+          text-decoration: underline
+      .description
+        line-height: 1.45
+        font-size: 1.2em
+        color: #767676
+    .nasa-info
+      overflow: hidden
+      margin-bottom: 0px
+      position: relative
+      .nasa-description
+        padding-left: 24px
+        padding-right: 24px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(50%, -50%)
+        p
+          color: #767676
+      .nasa-image
+        -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.15)
+        -moz-box-shadow: 0 0 20px rgba(0,0,0,0.15)
+        box-shadow: 0 0 20px rgba(0,0,0,0.15)
+
+@media (max-width: 1011px)
+  .who-uses-github
+    padding-top: 60px
+    padding-left: 40px
+    padding-right: 40px
+    .content
+      padding: 0px
+      .title
+        font-size: 2.4em
+      .info-col
+        .header
+          font-size: 1.5em
+        .description
+          line-height: 1.45
+          font-size: 1.15em
+          color: #767676
+
+@media (max-width: 767px)
+  .who-uses-github
+    padding-top: 50px
+    padding-left: 40px
+    padding-right: 40px
+    .content
+      padding: 0px
+      .title
+        font-size: 2.0em
+      .row
+        margin-top: 12px
+        margin-bottom: 12px
+        .info-col
+          margin: 6px 0px 6px 0px
+          .header
+            font-size: 1.35em
+          .description
+            line-height: 1.45
+            font-size: 1.15em
+            color: #767676
+      .nasa-info
+        margin-bottom: 0px
+        .nasa-description
+          position: relative
+          top: 0%
+          left: 0%
+          transform: translate(0%, 0%)
+          p
+            text-align: center
+
+@media (max-width: 544px)
+  .who-uses-github
+    padding-top: 50px
+    padding-left: 20px
+    padding-right: 20px
+    .content
+      padding: 0px
+      .title
+        font-size: 2.0em
+      .row
+        margin-top: 12px
+        margin-bottom: 12px
+        .info-col
+          margin: 6px 0px 6px 0px
+          .header
+            font-size: 1.35em
+          .description
+            line-height: 1.45
+            font-size: 1.15em
+            color: #767676
+      .nasa-info
+        margin-bottom: 0px
+        .nasa-description
+          position: relative
+          top: 0%
+          left: 0%
+          transform: translate(0%, 0%)
+          p
+            text-align: center
+
+// Signup-pro section
+.signup-pro
+  padding-top: 80px
+  padding-bottom: 20px
+  background: #fff
+  background: -webkit-linear-gradient(#f5f5f5, #fff)
+  background: -o-linear-gradient(#f5f5f5, #fff)
+  background: -moz-linear-gradient(#f5f5f5, #fff)
+  background: linear-gradient(#f5f5f5, #fff)
+  .content
+    max-width: 1020px
+    padding-left: 20px
+    padding-right: 20px
+    font-family: 'Roboto', sans-serif
+    .well
+      background-color: #fff
+      padding: 0px
+      border-radius: 5px
+      margin-bottom: 20px
+      box-shadow: 0 1px 1px rgba(0,0,0,0.1)
+      width: 100%
+      .signup-btn
+        padding: 24px
+        vertical-align: middle
+        border-bottom: 1px solid #e5e5e5
+        .btn
+          height: 45px
+          font-size: 1.2em
+          padding-left: 20px
+          padding-right: 20px
+          font-weight: bold
+          width: 100%
+          border-radius: 5px
+      .description
+        vertical-align: middle
+        padding: 24px
+        font-size: 1.6em
+
+@media (max-width: 1011px)
+  .signup-pro
+    padding-top: 60px
+    .content
+      padding-left: 40px
+      padding-right: 40px
+      .well
+        .description
+          font-size: 1.4em
+
+@media (max-width: 767px)
+  .signup-pro
+    padding-top: 50px
+    .content
+      .well
+        .description
+          font-size: 1.3em
+
+@media (max-width: 544px)
+  .signup-pro
+    .content
+      padding-left: 20px
+      padding-right: 20px
+
+@media (min-width: 544px)
+  .signup-pro
+    .well
+      display: table
+      .signup-btn
+        display: table-cell
+        border-bottom: none
+        border-right: 1px solid #e5e5e5
+      .description
+        display: table-cell
+
+// Footer
+.main-footer
+  .content
+    max-width: 1020px
+    padding-left: 20px
+    padding-right: 20px
+    .site-footer
+      padding: 40px 0px 40px 0px
+      margin-top: 40px
+      border-top: 1px solid #e5e5e5
+      position: relative
+      .list
+        padding: 0px
+        li
+          list-style-type: none
+          display: inline
+          font-size: 0.85em
+      .list1
+        li
+          margin-right: 10px
+          color: #767676
+      .list2
+        li
+          margin-left: 10px
+      .footer-logo
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        fill: #ccc
+        &:hover
+          fill: #bbb
+
+@media (max-width: 900px)
+  .main-footer
+    .list
+      display: block
+      line-height: 100%
+      text-align: center
+      width: 100%
+      margin-bottom: 10px
+    .list1
+      margin-bottom: 10px
+    .list2
+      margin-bottom: 10px
+
+
+// ------------------------ Sign in page ----------------------- //
+
+#signinpage
+  background-color: #f9f9f9
+  .header
+    padding-top: 32px
+    padding-bottom: 24px
+    text-align: center
+    svg
+      height: 48px
+      width: 48px
+      fill: #333
+  .signin-section
+    .content
+      margin: 0 auto
+      max-width: 340px
+      text-align: center
+      font-family: 'Roboto', sans-serif
+      .title
+        margin: 0px
+        font-weight: 300
+        font-size: 1.6em
+      .holder
+        letter-spacing: .5px
+        border: 1px solid #d8dee2
+        border-radius: 5px
+        padding: 20px
+        margin-top: 16px
+        background-color: #fff
+        .form-group
+          margin: 0px
+          label
+            margin-bottom: 7px
+            font-size: 14px
+            width: 100%
+            text-align: left
+            .forgot-pass
+              float: right
+              font-size: 12px
+          .form-control
+            margin-top: 5px
+            margin-bottom: 15px
+        .signup-btn
+          font-weight: bold
+          font-size: 14x
+          margin-top: 5px
+          width: 100%
+      .new-to-github
+        background-color: #f9f9f9
+        padding: 0px
+        p
+          padding: 15px 20px
+          font-size: 14px
+          font-weight: bold
+          margin-bottom: 0px
+
+footer
+  padding-top: 40px
+  padding-bottom: 40px
+  margin-top: 40px
+  .site-footer
+    .list
+      padding: 0px
+      margin: 0px
+      text-align: center
+      li
+        letter-spacing: 0.5px
+        list-style-type: none
+        display: inline
+        font-size: 0.85em
+        margin-right: 10px
+        a
+          color: #9b9b9b
