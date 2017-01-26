@@ -1,5 +1,8 @@
 <?php
 session_start();
+if ($_SESSION["user"]) {
+  die(header("Location: /"));
+}
 ?>
 <!doctype html>
 <html lang="en">
