@@ -13,7 +13,7 @@ if (isset($_POST["login-form"])) {
     $result = mysqli_query($connection, $query);
     $data = mysqli_fetch_assoc($result);
     if (!$data) {
-        die(header("Location: " . "/github-replica/login"));
+        die(header("Location: " . "/login"));
     }
 
     // Check if input_password matches database_password
