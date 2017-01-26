@@ -24,13 +24,13 @@ if (isset($_POST["home-signup"])) {
 
     // Check if data already exists
         // Username
-    $checkUsername = "SELECT username FROM users WHERE username = '$username'";
+    $checkUsername = "SELECT username FROM sipnub-users WHERE username = '$username'";
     $checkUsernameResult = mysqli_query($connection, $checkUsername);
     if (mysqli_fetch_row($checkUsernameResult)) {
         die(header("Location: " . $linkToSignUpPage));
     }
         // Email
-    $checkEmail = "SELECT email FROM users WHERE email = '$email'";
+    $checkEmail = "SELECT email FROM sipnub-users WHERE email = '$email'";
     $checkEmailResult = mysqli_query($connection, $checkEmail);
     if (mysqli_fetch_row($checkEmailResult)) {
         die(header("Location: " . $linkToSignUpPage));
@@ -43,7 +43,7 @@ if (isset($_POST["home-signup"])) {
     $password = crypt($password, $hashF_and_salt);
 
     // Set queries for database insertion
-    $query = "INSERT INTO users(username, email, password)";
+    $query = "INSERT INTO sipnub-users(username, email, password)";
     $query .= "VALUES ('$username', '$email', '$password')";
 
     // Query database and set result variable

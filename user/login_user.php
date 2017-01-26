@@ -9,7 +9,7 @@ if (isset($_POST["login-form"])) {
     $input_password     = mysqli_real_escape_string($connection, $_POST["password"]);
 
     // Check if user exists
-    $query = "SELECT * FROM users WHERE (username = '$input_login' OR email = '$input_login')";
+    $query = "SELECT * FROM supnub-users WHERE (username = '$input_login' OR email = '$input_login')";
     $result = mysqli_query($connection, $query);
     $data = mysqli_fetch_assoc($result);
     if (!$data) {
