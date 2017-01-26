@@ -9,7 +9,7 @@ if (isset($_POST["login-form"])) {
     $input_password     = mysqli_real_escape_string($connection, $_POST["password"]);
 
     // Check if user exists
-    $query = "SELECT * FROM supnub-users WHERE (username = '$input_login' OR email = '$input_login')";
+    $query = "SELECT * FROM supnub_users WHERE (username = '$input_login' OR email = '$input_login')";
     $result = mysqli_query($connection, $query);
     $data = mysqli_fetch_assoc($result);
     if (!$data) {
@@ -27,11 +27,9 @@ if (isset($_POST["login-form"])) {
     unset($data["password"]);
         // Check if the passwords match
     if (!($input_password === $database_password)) {
-        die(header("Location: " . "/github-replica/login"));
+        die(header("Location: " . "/login"));
     } else {
         $_SESSION["user"] = $data;
-        die(header("Location: " . "/github-replica"));
+        die(header("Location: /"));
     }
 }
-
-
