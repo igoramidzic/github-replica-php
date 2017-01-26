@@ -13,7 +13,8 @@ if (isset($_POST["login-form"])) {
     $result = mysqli_query($connection, $query);
     $data = mysqli_fetch_assoc($result);
     if (!$data) {
-        die(header("Location: " . "/login"));
+      echo "No user found!";
+        // die(header("Location: " . "/login"));
     }
 
     // Check if input_password matches database_password
@@ -27,7 +28,8 @@ if (isset($_POST["login-form"])) {
     unset($data["password"]);
         // Check if the passwords match
     if (!($input_password === $database_password)) {
-        die(header("Location: " . "/login"));
+      echo "Incorrect username or password";
+        // die(header("Location: " . "/login"));
     } else {
         $_SESSION["user"] = $data;
         die(header("Location: /"));
