@@ -4,6 +4,17 @@
 body {
   padding: 0; }
 
+.session-authentication {
+  text-align: left;
+  padding: 15px 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  border-radius: 5px;
+  color: #911;
+  background-color: #fcdede;
+  border: 1px solid #d2b2b2; }
+
 @media (max-width: 960px) {
   .navbar-header {
     float: none; }
@@ -571,21 +582,21 @@ body {
         font-weight: bold;
         margin-bottom: 0px; }
 
-footer {
+.login-page-footer {
   padding-top: 40px;
   padding-bottom: 40px;
   margin-top: 40px; }
-  footer .site-footer .list {
+  .login-page-footer .site-footer .list {
     padding: 0px;
     margin: 0px;
     text-align: center; }
-    footer .site-footer .list li {
+    .login-page-footer .site-footer .list li {
       letter-spacing: 0.5px;
       list-style-type: none;
       display: inline;
       font-size: 0.85em;
       margin-right: 10px; }
-      footer .site-footer .list li a {
+      .login-page-footer .site-footer .list li a {
         color: #9b9b9b; }
 
 /*# sourceMappingURL=style.css.map */

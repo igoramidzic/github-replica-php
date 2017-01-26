@@ -1,9 +1,6 @@
 <?php
-include "db/db.php";
 session_start();
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +14,14 @@ session_start();
 </head>
 <body>
 
-<!-- Logged out navbar -->
-<?php include "partials/loggedOutNavbar.php" ?>
+<!-- Determine which navbar to show -->
+<?php
+if (!$_SESSION) {
+    include "partials/loggedOutNavbar.php";
+} else {
+    include "partials/loggedInNavbar.php";
+}
+?>
 
 <!-- Signup section -->
 <section class="signup-section">

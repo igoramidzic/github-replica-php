@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,17 +24,24 @@
 
 <div class="signin-section">
     <div class="content container-fluid">
-        <h1 class="title">Sign in to GitHub</h1>
-        <form class="holder" action="user/create_user" method="POST">
+        <h1 class="title">Sign in to SipNub</h1>
+        <!-- Error validation alert -->
+        <div class="session-authentication flash">
+            <button type="button" class="close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            Incorrect username or password
+        </div>
+        <form class="holder" action="user/login_user" method="POST">
             <div class="form-group">
                 <label class="control-label pull-left">Username or email address</label>
-                <input type="text" name="username" class="form-control" id="username-input" aria-describedby="usernameHelp">
+                <input type="text" name="usernameOrEmail" class="form-control" id="username-or-email-input" aria-describedby="usernameOrEmailHelp">
             </div>
             <div class="form-group">
                 <label class="control-label pull-left">Password <a class="forgot-pass float-right" href="">Forgot password?</a></label>
                 <input type="password" name="password" class="form-control" id="password-input" aria-describedby="passwordHelp">
             </div>
-            <button type="submit" name="home-signup" class="signup-btn btn btn-success">Sign in</button>
+            <button type="submit" name="login-form" class="signup-btn btn btn-success">Sign in</button>
         </form>
 
         <div class="new-to-github holder">
@@ -40,7 +50,7 @@
     </div>
 </div>
 
-<footer>
+<footer class="login-page-footer">
     <div class="content container">
         <div class="site-footer">
             <ul class="list list1">
@@ -54,4 +64,8 @@
 </footer>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="public/js/script.js"></script>
 </html>

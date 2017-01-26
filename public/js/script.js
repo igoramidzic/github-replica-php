@@ -30,4 +30,9 @@ $(document).ready(function () {
     $(window).on('resize', function(){
         checkBrowserDimentions()
     });
+
+    // Remove alert on button click
+    $('.close').click(function () {
+        $('.flash').addClass('hidden');
+    })
 })

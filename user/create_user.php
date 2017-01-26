@@ -1,5 +1,6 @@
 <?php
-include "db/db.php";
+include "../db/db.php";
+session_start();
 
 // Set link to signup page for failed validation
 $linkToSignUpPage = "http://localhost/github-replica/join";
@@ -25,13 +26,13 @@ if (isset($_POST["home-signup"])) {
         // Username
     $checkUsername = "SELECT username FROM users WHERE username = '$username'";
     $checkUsernameResult = mysqli_query($connection, $checkUsername);
-    if ($result = mysqli_fetch_row($checkUsernameResult)) {
+    if (mysqli_fetch_row($checkUsernameResult)) {
         die(header("Location: " . $linkToSignUpPage));
     }
         // Email
     $checkEmail = "SELECT email FROM users WHERE email = '$email'";
     $checkEmailResult = mysqli_query($connection, $checkEmail);
-    if ($result = mysqli_fetch_row($checkEmailResult)) {
+    if (mysqli_fetch_row($checkEmailResult)) {
         die(header("Location: " . $linkToSignUpPage));
     }
 
@@ -51,5 +52,8 @@ if (isset($_POST["home-signup"])) {
     // Check for error
     if (!$result) {
         die("Error occurred. Please try again");
+    } else {
+
+        die(header("Location: " . "/github-replica"));
     }
 }
