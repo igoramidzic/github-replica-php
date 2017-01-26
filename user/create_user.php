@@ -3,7 +3,6 @@ include "../db/db.php";
 session_start();
 
 // Set link to signup page for failed validation
-$linkToSignUpPage = "http://localhost/github-replica/join";
 
 if (isset($_POST["home-signup"])) {
     // Import user data from submitted form
@@ -15,25 +14,26 @@ if (isset($_POST["home-signup"])) {
 
         // Username
     if (empty($username)) {
-        die(header("Location: " . $linkToSignUpPage));
+        die(header("Location: /join"));
     }
         // Email
     if (empty($email)) {
-        die(header("Location: " . $linkToSignUpPage));
+        die(header("Location: /join"));
     }
 
     // Check if data already exists
         // Username
-    $checkUsername = "SELECT username FROM sipnub-users WHERE username = '$username'";
+    $checkUsername = "SELECT username FROM sipnub_users WHERE username = '$username'";
     $checkUsernameResult = mysqli_query($connection, $checkUsername);
+
     if (mysqli_fetch_row($checkUsernameResult)) {
-        die(header("Location: " . $linkToSignUpPage));
+        die(header("Location: /join"));
     }
         // Email
-    $checkEmail = "SELECT email FROM sipnub-users WHERE email = '$email'";
+    $checkEmail = "SELECT email FROM sipnub_users WHERE email = '$email'";
     $checkEmailResult = mysqli_query($connection, $checkEmail);
     if (mysqli_fetch_row($checkEmailResult)) {
-        die(header("Location: " . $linkToSignUpPage));
+        die(header("Location: /join"));
     }
 
     // Hash user's password
@@ -43,7 +43,7 @@ if (isset($_POST["home-signup"])) {
     $password = crypt($password, $hashF_and_salt);
 
     // Set queries for database insertion
-    $query = "INSERT INTO sipnub-users(username, email, password)";
+    $query = "INSERT INTO sipnub_users(username, email, password)";
     $query .= "VALUES ('$username', '$email', '$password')";
 
     // Query database and set result variable
@@ -54,6 +54,6 @@ if (isset($_POST["home-signup"])) {
         die("Error occurred. Please try again");
     } else {
 
-        die(header("Location: " . "/github-replica"));
+        die(header("Location: /"));
     }
 }
