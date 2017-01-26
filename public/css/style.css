@@ -529,54 +529,54 @@ body {
     margin-bottom: 10px; }
   .main-footer .list2 {
     margin-bottom: 10px; } }
-.signinpage {
+#signin-page {
   background-color: #f9f9f9; }
-  .signinpage .header {
+  #signin-page .header {
     padding-top: 32px;
     padding-bottom: 24px;
     text-align: center; }
-    .signinpage .header svg {
+    #signin-page .header svg {
       height: 48px;
       width: 48px;
       fill: #333; }
-  .signinpage .signin-section .content {
+  #signin-page .signin-section .content {
     margin: 0 auto;
     max-width: 340px;
     text-align: center;
     font-family: "Roboto", sans-serif; }
-    .signinpage .signin-section .content .title {
+    #signin-page .signin-section .content .title {
       margin: 0px;
       font-weight: 300;
       font-size: 1.6em; }
-    .signinpage .signin-section .content .holder {
+    #signin-page .signin-section .content .holder {
       letter-spacing: 0.5px;
       border: 1px solid #d8dee2;
       border-radius: 5px;
       padding: 20px;
       margin-top: 16px;
       background-color: #fff; }
-      .signinpage .signin-section .content .holder .form-group {
+      #signin-page .signin-section .content .holder .form-group {
         margin: 0px; }
-        .signinpage .signin-section .content .holder .form-group label {
+        #signin-page .signin-section .content .holder .form-group label {
           margin-bottom: 7px;
           font-size: 14px;
           width: 100%;
           text-align: left; }
-          .signinpage .signin-section .content .holder .form-group label .forgot-pass {
+          #signin-page .signin-section .content .holder .form-group label .forgot-pass {
             float: right;
             font-size: 12px; }
-        .signinpage .signin-section .content .holder .form-group .form-control {
+        #signin-page .signin-section .content .holder .form-group .form-control {
           margin-top: 5px;
           margin-bottom: 15px; }
-      .signinpage .signin-section .content .holder .signup-btn {
+      #signin-page .signin-section .content .holder .signup-btn {
         font-weight: bold;
         font-size: 14x;
         margin-top: 5px;
         width: 100%; }
-    .signinpage .signin-section .content .new-to-github {
+    #signin-page .signin-section .content .new-to-github {
       background-color: #f9f9f9;
       padding: 0px; }
-      .signinpage .signin-section .content .new-to-github p {
+      #signin-page .signin-section .content .new-to-github p {
         padding: 15px 20px;
         font-size: 14px;
         font-weight: bold;
