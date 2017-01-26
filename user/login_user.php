@@ -8,6 +8,11 @@ if (isset($_POST["login-form"])) {
     $input_login        = mysqli_real_escape_string($connection, $_POST["usernameOrEmail"]);
     $input_password     = mysqli_real_escape_string($connection, $_POST["password"]);
 
+    $query2 = "SELECT * FROM subnub_users";
+    $result2 = mysqli_query($connection, $query2);
+    $data2 = mysqli_fetch_assoc($result2);
+    print_r($data2);
+
     // Check if user exists
     $query = "SELECT * FROM supnub_users WHERE (username = '$input_login' OR email = '$input_login')";
     $result = mysqli_query($connection, $query);
