@@ -1,6 +1,6 @@
 <?php
 
-$connection = mysqli_connect('us-cdbr-iron-east-04.cleardb.net', 'be120768581baf', 'a38ae27f', 'heroku_faec0df65593528');
+$connection = mysqli_connect('us-cdbr-iron-east-04.cleardb.net', 'b961973f7f08c0', '61801897', 'heroku_2de62fcae6ffdbe');
 
 if (!$connection) {
     die("Database connection error");
