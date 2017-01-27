@@ -43,7 +43,7 @@ body
     display: block !important
 
 // Nav
-.navbar
+.loggedOutNavbar
   background-color: #fff
   border: none
   border-radius: 0px
@@ -90,6 +90,52 @@ body
 @media (max-width: 961px)
   .navbar
     height: 52px
+
+// Logged in navbar
+.loggedInNavbar
+  background-color: #f5f5f5
+  padding: 10px 0px 10px 0px
+  border-radius: 0px
+  border-bottom: 1px solid rgba(0,0,0,0.075)
+  margin-bottom: 0px
+  font-family: 'Roboto', sans-serif
+  .content
+    max-width: 1000px
+    margin: 0 auto
+    ul
+      list-style-type: none
+      padding: 0px
+      margin: 0px
+      display: inline
+      li
+        margin-right: 10px
+        display: inline
+      .nav-logo
+        fill: #333
+        float: left
+        &:hover
+          fill: #4078c0
+      .search-form
+        display: inline
+        .search-textbox
+          padding-left: 5px
+          font-size: 13px
+          min-width: 360px
+          min-height: 28px
+          border: 1px solid #ddd
+          border-radius: 3px
+      .nav-link
+        margin: 0px
+        a
+          padding: 4px 8px
+          line-height: 27px
+          color: #333
+          text-decoration: none
+          font-size: 13px
+          font-weight: bold
+          &:hover
+            color: #4078c0
+
 
 // Sign up section
 .signup-section

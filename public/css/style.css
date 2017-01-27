@@ -47,14 +47,14 @@ body {
 
   .collapse.in {
     display: block !important; } }
-.navbar {
+.loggedOutNavbar {
   background-color: #fff;
   border: none;
   border-radius: 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.075);
   height: 77px;
   margin-bottom: 0px; }
-  .navbar .content {
+  .loggedOutNavbar .content {
     padding-left: 20px;
     padding-right: 20px;
     position: relative;
@@ -62,21 +62,21 @@ body {
     transform: translateY(-50%);
     max-width: 1020px;
     max-height: 36px; }
-    .navbar .content .logo-link svg {
+    .loggedOutNavbar .content .logo-link svg {
       fill: #333; }
-      .navbar .content .logo-link svg:hover {
+      .loggedOutNavbar .content .logo-link svg:hover {
         fill: #4078c0; }
-    .navbar .content .site-header-nav-main {
+    .loggedOutNavbar .content .site-header-nav-main {
       padding-left: 22px; }
-      .navbar .content .site-header-nav-main li a {
+      .loggedOutNavbar .content .site-header-nav-main li a {
         color: #3c4146;
         font-size: 1.1em;
         padding: 9px 10px 9px 10px; }
-    .navbar .content .site-header-nav-secondary li a {
+    .loggedOutNavbar .content .site-header-nav-secondary li a {
       color: #3c4146;
       font-size: 0.9em;
       padding: 9px 10px 9px 10px; }
-    .navbar .content .site-header-nav-secondary li input {
+    .loggedOutNavbar .content .site-header-nav-secondary li input {
       height: 34px;
       border-color: #ddd;
       width: 160px;
@@ -84,13 +84,57 @@ body {
       margin-right: 11px;
       margin-left: 5px;
       padding-left: 8px; }
-    .navbar .content .signin-btn {
+    .loggedOutNavbar .content .signin-btn {
       background-image: linear-gradient(#eee, #ddd);
       border-color: #ccc; }
 
 @media (max-width: 961px) {
   .navbar {
     height: 52px; } }
+.loggedInNavbar {
+  background-color: #f5f5f5;
+  padding: 10px 0px 10px 0px;
+  border-radius: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+  margin-bottom: 0px;
+  font-family: "Roboto", sans-serif; }
+  .loggedInNavbar .content {
+    max-width: 1000px;
+    margin: 0 auto; }
+    .loggedInNavbar .content ul {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+      display: inline; }
+      .loggedInNavbar .content ul li {
+        margin-right: 10px;
+        display: inline; }
+      .loggedInNavbar .content ul .nav-logo {
+        fill: #333;
+        float: left; }
+        .loggedInNavbar .content ul .nav-logo:hover {
+          fill: #4078c0; }
+      .loggedInNavbar .content ul .search-form {
+        display: inline; }
+        .loggedInNavbar .content ul .search-form .search-textbox {
+          padding-left: 5px;
+          font-size: 13px;
+          min-width: 360px;
+          min-height: 28px;
+          border: 1px solid #ddd;
+          border-radius: 3px; }
+      .loggedInNavbar .content ul .nav-link {
+        margin: 0px; }
+        .loggedInNavbar .content ul .nav-link a {
+          padding: 4px 8px;
+          line-height: 27px;
+          color: #333;
+          text-decoration: none;
+          font-size: 13px;
+          font-weight: bold; }
+          .loggedInNavbar .content ul .nav-link a:hover {
+            color: #4078c0; }
+
 .signup-section {
   padding-top: 180px;
   padding-bottom: 180px;

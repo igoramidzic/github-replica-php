@@ -35,4 +35,6 @@ $(document).ready(function () {
     $('.close').click(function () {
         $('.flash').addClass('hidden');
     })
+
+    $('.dropdown-toggle').dropdown();
 })

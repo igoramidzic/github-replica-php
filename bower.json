@@ -1,0 +1,21 @@
+{
+  "name": "github-replica-php",
+  "homepage": "https://github.com/igoramidzic/github-replica-php",
+  "authors": [
+    "Igor Amidzic <amidzicigor@yahoo.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
