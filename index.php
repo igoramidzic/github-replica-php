@@ -1,4 +1,4 @@
-<?php include "/partials/html-header.php" ?>
+<?php include "/partials/html-header2.php" ?>
     <title>SipNub</title>
 </head>
 <body>
