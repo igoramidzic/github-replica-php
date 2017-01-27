@@ -52,8 +52,16 @@ if (isset($_POST["home-signup"])) {
     // Check for error
     if (!$result) {
         die("Error occurred. Please try again");
-    } else {
-
-        die(header("Location: /"));
     }
+
+    // Get new user and save to SESSION
+    $query = "SELECT * FROM sipnub_users WHERE (username = '$username'";
+    $result = mysqli_query($connection, $query);
+    $data = mysqli_fetch_assoc($result);
+
+    // Remove the password from $data array
+    unset($data["password"]);
+
+    $_SESSION["user"] = $data;
+    print_r($_SESSION)
 }
