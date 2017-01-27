@@ -15,7 +15,7 @@ if (isset($_POST["login-form"])) {
   $data = mysqli_fetch_assoc($result);
   if (!$data) {
     $_SESSION["login-validation-errors"] = true;
-    die(header("Location: /github-replica/login"));
+    die(header("Location: /login"));
   }
 
   // Check if input_password matches database_password
@@ -30,9 +30,9 @@ if (isset($_POST["login-form"])) {
     // Check if the passwords match
   if (!($input_password === $database_password)) {
     $_SESSION["login-validation-errors"] = true;
-    die(header("Location: /github-replica/login"));
+    die(header("Location: /login"));
   } else {
     $_SESSION["user"] = $data;
-    die(header("Location: /github-replica"));
+    die(header("Location: /"));
   }
 }
