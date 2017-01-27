@@ -16,7 +16,7 @@
 
 <!-- Determine which navbar to show -->
 <?php
-if (!$_SESSION) {
+if (!isset($_SESSION["user"])) {
   $path = getcwd();
   $path .= "/partials/loggedOutNavbar.php";
   include_once($path);
@@ -29,12 +29,12 @@ if (!$_SESSION) {
 
 <!-- Home page content -->
 <?php
-if (isset($_SESSION["user"])) {
-
-} else {
+if (!isset($_SESSION["user"])) {
   $path = getcwd();
   $path .= "/partials/home-page-logged-out.php";
   include_once($path);
+} else {
+
 }
 ?>
 

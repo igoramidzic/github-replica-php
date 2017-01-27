@@ -24,12 +24,18 @@ if (isset($_SESSION["user"])) {
     <div class="content container-fluid">
         <h1 class="title">Sign in to SipNub</h1>
         <!-- Error validation alert -->
-        <div class="session-authentication flash">
-            <button type="button" class="close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            Incorrect username or password
-        </div>
+        <?php
+          if (isset($_SESSION["login-validation-errors"])) {
+            print_r("
+            <div class='session-authentication flash'>
+              <button type='button' class='close'>
+                  <span aria-hidden='true'>&times;</span>
+              </button>
+              Incorrect username or password
+            </div>");
+          }
+          unset($_SESSION["login-validation-errors"]);
+        ?>
         <form class="holder" action="user/login_user" method="POST">
             <div class="form-group">
                 <label class="control-label pull-left">Username or email address</label>

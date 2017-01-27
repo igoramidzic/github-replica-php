@@ -643,4 +643,47 @@ body {
       .login-page-footer .site-footer .list li a {
         color: #9b9b9b; }
 
+.signup-page-signup-form {
+  background-image: linear-gradient(to bottom, whitesmoke, #fff);
+  font-family: "Roboto", sans-serif; }
+  .signup-page-signup-form .loggedOutNavbar {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+  .signup-page-signup-form .form-content {
+    max-width: 750px;
+    padding: 0px;
+    padding-top: 30px; }
+    .signup-page-signup-form .form-content .setup-header {
+      margin: 0 auto 30px; }
+      .signup-page-signup-form .form-content .setup-header .title {
+        font-weight: bold;
+        margin: 0px;
+        font-size: 45px; }
+      .signup-page-signup-form .form-content .setup-header .title-description {
+        margin: 2px 0px 0px 0px;
+        font-size: 21px; }
+    .signup-page-signup-form .form-content .steps {
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      margin: 30px auto 0; }
+      .signup-page-signup-form .form-content .steps .step:first-child {
+        border-right: 1px solid #ddd; }
+      .signup-page-signup-form .form-content .steps .step:nth-child(2) {
+        border-right: 1px solid #ddd; }
+      .signup-page-signup-form .form-content .steps .step {
+        padding: 0px; }
+        .signup-page-signup-form .form-content .steps .step .step-content {
+          padding: 10px 15px;
+          color: #ccc;
+          background-color: #fafafa; }
+          .signup-page-signup-form .form-content .steps .step .step-content svg {
+            fill: #ccc;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 5px; }
+        .signup-page-signup-form .form-content .steps .step .current {
+          color: #333;
+          background-color: #fff; }
+          .signup-page-signup-form .form-content .steps .step .current svg {
+            fill: #4078c0; }
+
 /*# sourceMappingURL=style.css.map */

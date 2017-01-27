@@ -55,13 +55,14 @@ if (isset($_POST["home-signup"])) {
     }
 
     // Get new user and save to SESSION
-    $query = "SELECT * FROM sipnub_users WHERE (username = '$username'";
+    $query = "SELECT * FROM sipnub_users WHERE (username = '$username')";
     $result = mysqli_query($connection, $query);
     $data = mysqli_fetch_assoc($result);
 
     // Remove the password from $data array
     unset($data["password"]);
 
+    // Set user's SESSION and redirect
     $_SESSION["user"] = $data;
-    print_r($_SESSION)
+    die(header("Location: /"));
 }

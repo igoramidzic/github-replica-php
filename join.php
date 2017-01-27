@@ -11,10 +11,10 @@
 </head>
 <body>
 
-<!-- Logged out navbar -->
+<!-- Signup page content -->
 <?php
   $path = getcwd();
-  $path .= "/partials/loggedOutNavbar.php";
+  $path .= "/partials/signup-page-form.php";
   include_once($path);
 ?>
 
