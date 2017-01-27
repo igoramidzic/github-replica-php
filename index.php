@@ -1,4 +1,8 @@
-<?php include "/partials/html-header2.php" ?>
+<?php
+  $path = $_SERVER['DOCUMENT_ROOT'];
+  $path .= "/partials/html-header.php";
+  include_once($path);
+?>
     <title>SipNub</title>
 </head>
 <body>
@@ -181,4 +185,8 @@ if (!$_SESSION) {
 </footer>
 
 </body>
-<?php include "partials/html-footer.php" ?>
+<?php
+  $path = $_SERVER['DOCUMENT_ROOT'];
+  $path .= "/partials/html-footer.php";
+  include_once($path);
+?>

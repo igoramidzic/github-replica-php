@@ -1,4 +1,8 @@
-<?php include "/partials/html-header.php" ?>
+<?php
+  $path = $_SERVER['DOCUMENT_ROOT'];
+  $path .= "/partials/html-header.php";
+  include_once($path);
+?>
 <?php
 if (isset($_SESSION["user"])) {
   die(header("Location: /"));
@@ -60,4 +64,8 @@ if (isset($_SESSION["user"])) {
 
 
 </body>
-<?php include "partials/html-footer.php" ?>
+<?php
+  $path = $_SERVER['DOCUMENT_ROOT'];
+  $path .= "/partials/html-footer.php";
+  include_once($path);
+?>
