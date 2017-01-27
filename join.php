@@ -1,5 +1,5 @@
 <?php
-  $path = $_SERVER['DOCUMENT_ROOT'];
+  $path = getcwd();
   $path .= "/partials/html-header.php";
   include_once($path);
 
@@ -13,14 +13,14 @@
 
 <!-- Logged out navbar -->
 <?php
-  $path = $_SERVER['DOCUMENT_ROOT'];
+  $path = getcwd();
   $path .= "/partials/loggedOutNavbar.php";
   include_once($path);
 ?>
 
 </body>
 <?php
-  $path = $_SERVER['DOCUMENT_ROOT'];
+  $path = getcwd();
   $path .= "/partials/html-footer.php";
   include_once($path);
 ?>

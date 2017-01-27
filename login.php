@@ -1,5 +1,5 @@
 <?php
-  $path = $_SERVER['DOCUMENT_ROOT'];
+  $path = getcwd();
   $path .= "/partials/html-header.php";
   include_once($path);
 ?>
@@ -65,7 +65,7 @@ if (isset($_SESSION["user"])) {
 
 </body>
 <?php
-  $path = $_SERVER['DOCUMENT_ROOT'];
+  $path = getcwd();
   $path .= "/partials/html-footer.php";
   include_once($path);
 ?>
